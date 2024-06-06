@@ -90,13 +90,23 @@ img{
     background: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, .07);
 }
+.nav-link{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.nav-link.blue_menu{
+    color: var(--primary-color);
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
 /* Header Design end */
 
 /* Profile Design Start */
 .profile{
     position: fixed;
     top: 100px;
-    left: 100px;
+    left: 0;
 }
 .profile_inner .profile_photo{
     width: 170px;
@@ -294,4 +304,27 @@ img{
 .submit_btn:hover{
     background: #ffffff;
     color: var(--primary-color);
+}
+
+/* Responsive design start */
+
+/* max width 992px */
+@media (max-width: 992px) {
+    .profile{
+        position: unset;
+        margin-bottom: 50px;
+    }
+    .profile_inner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 30px;
+    }
+}
+
+/* Max width: 768px */
+@media (max-width: 768px) {
+    .research_single{
+        flex-direction: column;
+    }
 }
