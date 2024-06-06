@@ -327,4 +327,17 @@ img{
     .research_single{
         flex-direction: column;
     }
+    .research_img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .research_content{
+        width: 100%;
+    }
+    .input_small{
+        flex-direction: column;
+    }
+    .input_small input{
+        width: 100%;
+    }
 }
