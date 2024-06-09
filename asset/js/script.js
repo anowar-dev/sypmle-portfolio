@@ -21,4 +21,13 @@ $(document).ready(function(){
         $(window).on('load', adjustFixedDiv);
         $(document).ready(adjustFixedDiv);
     }
+
+    // Back to top
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $(".back_to_top").css({ transform: "translateY(0)" });
+    } else {
+      $(".back_to_top").css({ transform: "translateY(70px)" });
+    }
+  });
 });

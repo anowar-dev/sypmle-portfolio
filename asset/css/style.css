@@ -33,6 +33,7 @@ img{
     right: 20px;
     bottom: 20px;
     transition: .3s;
+    transform: translateY(70px);
 }
 .back_to_top:hover{
     background: #ffffff;
@@ -200,7 +201,7 @@ img{
 
 /* Experience */
 .experience_section{
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .expTitle{
     margin-top: 50px;
@@ -294,7 +295,7 @@ img{
 .submit_btn{
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
-    padding: 7px 15px;
+    padding: 10px 20px;
     border-radius: 6px;
     transition: .3s;
     font-size: 15px;
@@ -339,5 +340,16 @@ img{
     }
     .input_small input{
         width: 100%;
+    }
+}
+
+/* Max width 420px */
+@media (max-width: 420px) {
+    .profile_inner{
+        flex-direction: column;
+    }
+    .profile_inner .profile_photo{
+        width: 150px;
+        height: 150px;
     }
 }
